@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Homepage - Gen Green Movement</title>
+  <link rel="icon" href="../media/favicon.ico" />
+  <!-- Google Fonts: Open Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset and base */
+    body {
+      margin: 0;
+      background-color: #f9f9f9;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      color: #333333;
+    }
+
+    /* Header and nav */
+    header {
+      background-color: #2a7f62;
+      padding: 10px 20px;
+      color: white;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      flex: 1;
+    }
+    ul.nav-links {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 30px;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    ul.nav-links li a {
+      color: white;
+      text-decoration: none;
+      transition: text-decoration 0.3s ease;
+    }
+    ul.nav-links li a:hover {
+      text-decoration: underline;
+    }
+    .search-container {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .search-container form {
+      display: flex;
+    }
+    .search-container input[type="text"] {
+      padding: 5px 10px;
+      border-radius: 4px 0 0 4px;
+      border: none;
+      font-size: 1rem;
+      outline: none;
+    }
+    .search-container button {
+      background-color: #1f5f44;
+      border: none;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    /* Main content */
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h1, h2 {
+      color: #2a7f62;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 16px;
+      font-size: 1.1rem;
+    }
+
+    /* Table styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 40px;
+    }
+    table caption {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #2a7f62;
+      font-size: 1.2rem;
+    }
+    table th, table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      background-color: #eef4f5;
+      color: #000;
+    }
+    table a {
+      color: black;
+      text-decoration: underline;
+    }
+    table a:hover {
+      text-decoration: none;
+    }
+
+    /* Images */
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2a7f62;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+    footer .footer-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 15px 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+    footer .footer-container div,
+    footer .footer-container a {
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 500;
+    }
+    footer .footer-container a:hover {
+      text-decoration: underline;
+    }
+    footer .footer-container img {
+      width: 18px;
+      height: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+    <a href="index.html">
+    <img src="media/LOGO.png" style="height:50px;" />
+    </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="roots.html">Our Roots</a></li>
+      <li><a href="greenprint.html">Greenprint</a></li>
+      <li><a href="support.html">Support Us</a></li>
+    </ul>
+
+    <div class="search-container">
+      <form action="/search" method="get">
+        <input type="text" name="q" placeholder="Search..." />
+        <button type="submit">🔍</button>
+      </form>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section style="
+    background: url('media/HOMEPAGEPIC.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-bottom: 40px;
+  ">
+    <div style="
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+    "></div>
+    <div style="position: relative; padding: 20px; max-width: 800px;">
+      <h1 style="font-size: 2.5rem; margin-bottom: 15px; text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">
+        Youth Rising for Climate Action
+      </h1>
+      <p style="font-size: 1.3rem; line-height: 1.6; text-shadow: 1px 1px 4px rgba(0,0,0,0.7);">
+        The power to change the future is in the hands of the youth.  
+        Every action taken today builds a greener and more sustainable tomorrow.  
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Background of the Problem</h2>
+    <p>Climate change presents significant challenges to development in the Philippines. Between 2002 and 2024, the country lost 196 thousand hectares of humid primary forest, accounting for 13% of its total tree cover loss during that period. The overall area of humid primary forest diminished by 4.3% in these years.</p>
+    <p>Furthermore, from 2001 to 2024, the Philippines lost 1.52 million hectares of tree cover, representing 8.2% of the total tree cover area in 2000, along with 928 million metric tons of CO₂ equivalent emissions. Without intervention, climate change could lead to a 13.6% reduction in GDP by 2040, with the most vulnerable households being hit the hardest.</p>
+
+    <table>
+      <caption>Climate Change Statistics in the Philippines (2001-2024)</caption>
+      <thead>
+        <tr>
+          <th>Statistic</th>
+          <th>Value</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Loss of humid primary forest</td>
+          <td>196,000 hectares</td>
+          <td><a href="https://www.globalforestwatch.org/dashboards/country/PHL/" target="_blank" rel="noopener">Global Forest Watch, 2024</a></td>
+        </tr>
+        <tr>
+          <td>Total tree cover loss</td>
+          <td>1.52 million hectares (8.2%)</td>
+          <td><a href="https://www.globalforestwatch.org/dashboards/country/PHL/" target="_blank" rel="noopener">Global Forest Watch, 2024</a></td>
+        </tr>
+        <tr>
+          <td>CO₂ equivalent emissions</td>
+          <td>928 million metric tons</td>
+          <td><a href="https://www.globalforestwatch.org/dashboards/country/PHL/" target="_blank" rel="noopener">Global Forest Watch, 2024</a></td>
+        </tr>
+        <tr>
+          <td>Projected GDP reduction by 2040</td>
+          <td>13.6%</td>
+          <td><a href="https://www.worldbank.org/en/country/philippines/publication/philippines-country-climate-and-development-report" target="_blank" rel="noopener">The World Bank, 2022</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>What's Being Done Now</h2>
+    <p>Young people in the Philippines are emerging as powerful agents of change, using digital platforms to lead climate action. Initiatives like the 2030 Youth Force Philippines engage nearly half of the country’s population to make the Sustainable Development Goals a reality through education, activation, and collaboration.</p>
+    <p>The Climate Change Commission promotes digital innovation among youth, encouraging the use of online platforms for awareness and advocacy. Youth voices have been recognized by the Quezon City Government and UNICEF, highlighting their leadership in collective climate action campaigns.</p>
+  </section>
+
+  <section>
+    <h2>Where We Come In</h2>
+    <p>The Gen Green Movement website is designed to inform, engage, and empower the youth of the Philippines to participate actively in climate action. By highlighting real data, youth-led projects, and opportunities to act, we motivate users to become advocates for climate action within their communities.</p>
+  </section>
+
+  <section>
+    <h2>Visions of Resistance</h2>
+    <img src="media/IMAGEONE.png" alt="Youth Climate Rally" width="300" />
+    <p><small>Photo by Climate Action Network, 2023</small></p>
+
+    <img src="media/IMAGETWO.png" alt="Youth Climate Summit" width="300" />
+    <p><small>Photo by Friedman, 2019, <i>The Washington Post</i></small></p>
+  </section>
+
+  <section>
+    <h2>Call to Action</h2>
+    <p>Join the Gen Green Movement today! Volunteer, share information, and participate in local climate initiatives. Together, we can make a difference and protect our planet for future generations.</p>
+  </section>
+
+  <section>
+    <h2>References</h2>
+    <ul>
+      <li>2030 Youth Force Philippines | UN SDG Action Awards. (2022, March 4). UN SDG Action Awards. https://sdgactionawards.org/2030-youth-force-philippines/</li>
+      <li>Forest Watch. (2024). Philippines Deforestation Rates & Statistics | GFW. Global Forest Watch. https://www.globalforestwatch.org/dashboards/country/PHL/</li>
+      <li>Friedman, L. (2019, July 12). Youth climate summit starts today. It’s full of young activists trained in the anti-Trump movement. <i>The Washington Post</i>. https://www.washingtonpost.com/politics/2019/07/12/youth-climate-summit-starts-today-its-full-young-activists-trained-anti-trump-movement/</li>
+      <li>Salas, E. (2025, July 7). Topic: Global climate change. Statista. https://www.statista.com/topics/1148/global-climate-change/#topicOverview</li>
+      <li>The World Bank. (2022, November 9). Philippines Country Climate and Development Report. World Bank. https://www.worldbank.org/en/country/philippines/publication/philippines-country-climate-and-development-report</li>
+      <li>Young people in the Philippines are leading the fight against climate change. (2023, November 19). UNICEF Philippines. https://www.unicef.org/philippines/press-releases/young-people-philippines-are-leading-fight-against-climate-change</li>
+      <li>Youth Drives Climate Action through Digital Innovation. (2024). Climate.gov.ph. https://climate.gov.ph/news/911</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div>© 2025 Gen Green Movement</div>
+    <a href="https://www.facebook.com/gengreenmovement" target="_blank" rel="noopener" aria-label="Facebook">
+      <img src="media/facebook-icon.svg" alt="Facebook icon" /> Facebook
+    </a>
+    <a href="mailto:contact@gengreenmovement.org" aria-label="Email">
+      <img src="media/email-icon.svg" alt="Email icon" /> contact@gengreenmovement.org
+    </a>
+    <a href="tel:+15551234567" aria-label="Phone">
+      <img src="media/phone-icon.svg" alt="Phone icon" /> +1 (555) 123-4567
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>
