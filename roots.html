@@ -132,42 +132,6 @@
       color: #444;
       margin-bottom: 40px;
     }
-    /* Hero Section */
-    .hero {
-      background: url('media/HOMEPAGEPIC.jpg') no-repeat center center/cover;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      position: relative;
-      margin-bottom: 40px;
-    }
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(0,0,0,0.5);
-      z-index: 0;
-    }
-    .hero-text {
-      position: relative;
-      z-index: 1;
-      padding: 20px 30px;
-      border-radius: 10px;
-      max-width: 800px;
-    }
-    .hero-text h1 {
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-    }
-    .hero-text p {
-      font-size: 1.3rem;
-      line-height: 1.6;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-    }
     /* Footer */
     footer {
       background-color: #2a7f62;
@@ -208,9 +172,9 @@
 <header>
   <nav>
     <div class="logo">
-    <a href="index.html">
-    <img src="../media/LOGO.png" style="height:50px;" />
-    </a>
+      <a href="index.html">
+        <img src="../media/LOGO.png" style="height:70px;" alt="Gen Green Logo" />
+      </a>
     </div>
 
     <ul class="nav-links">
@@ -231,11 +195,31 @@
 
 <main>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Youth Rising for Climate Action</h1>
-      <p>The power to change the future is in the hands of the youth. Every action taken today builds a greener and more sustainable tomorrow.</p>
+  <!-- Hero Section with inline styles -->
+  <section style="
+    background: url('../media/HOMEPAGEPIC.jpg') no-repeat center center / cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-bottom: 40px;
+  ">
+    <div style="
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 0;
+    "></div>
+    <div style="position: relative; padding: 20px 30px; max-width: 800px; z-index: 1; border-radius: 10px;">
+      <h1 style="font-size: 2.5rem; margin-bottom: 15px; text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">
+        Youth Rising for Climate Action
+      </h1>
+      <p style="font-size: 1.3rem; line-height: 1.6; text-shadow: 1px 1px 4px rgba(0,0,0,0.7);">
+        The power to change the future is in the hands of the youth. Every action taken today builds a greener and more sustainable tomorrow.
+      </p>
     </div>
   </section>
 
@@ -250,7 +234,7 @@
   </p>
 
   <section class="team-section">
-    <img src="media/MYFACE.png" />
+    <img src="../media/MYFACE.png" alt="Matt V. Ticaro" class="team-photo" />
     <div class="team-description">
       <p>
         Hello! My name is Matt V. Ticaro, a 14-year-old student from 9-Barium, Philippine Science High School – Southern Mindanao Campus. I started the Gen Green Movement because I believe the youth can lead the fight against climate change. What began with small steps in my community has grown into a space where young people can come together to act, inspire, and create a sustainable future. 
@@ -271,11 +255,11 @@
   <section class="contact-info">
     <h2>Contact & Location</h2>
     <p>
-    <strong>Facebook:</strong> <a href="https://www.facebook.com/gengreenmovement" target="_blank" style="color:#2a7f62; text-decoration:none;">facebook.com/gengreenmovement</a><br />
-    <strong>Address:</strong> 21 Greenway Blvd, Eco City, Philippines<br />
-    <strong>Email:</strong> <a href="mailto:@gengreenmovement.org" style="color:#2a7f62; text-decoration:none;">@gengreenmovement.org</a><br />
-    <strong>Phone:</strong> 0912-327-6686
-  </p>
+      <strong>Facebook:</strong> <a href="https://www.facebook.com/gengreenmovement" target="_blank" style="color:#2a7f62; text-decoration:none;">facebook.com/gengreenmovement</a><br />
+      <strong>Address:</strong> 21 Greenway Blvd, Eco City, Philippines<br />
+      <strong>Email:</strong> <a href="mailto:@gengreenmovement.org" style="color:#2a7f62; text-decoration:none;">@gengreenmovement.org</a><br />
+      <strong>Phone:</strong> 0912-327-6686
+    </p>
   </section>
 
 </main>
@@ -284,16 +268,19 @@
   <div class="footer-container">
     <div>© 2025 Gen Green Movement</div>
     <a href="https://www.facebook.com/gengreenmovement" target="_blank" rel="noopener" aria-label="Facebook">
-      <img src="media/facebook-icon.svg" alt="Facebook icon" /> Facebook
+     Facebook
     </a>
     <a href="mailto:contact@gengreenmovement.org" aria-label="Email">
-      <img src="media/email-icon.svg" alt="Email icon" /> @gengreenmovement.org
+     @gengreenmovement.org
     </a>
     <a href="tel:+09123276686" aria-label="Phone">
-      <img src="media/phone-icon.svg" alt="Phone icon" /> 0912-327-6686
+     0912-327-6686
     </a>
   </div>
 </footer>
+
+</body>
+</html>
 
 </body>
 
